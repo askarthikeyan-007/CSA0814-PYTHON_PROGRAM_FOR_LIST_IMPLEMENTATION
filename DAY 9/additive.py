@@ -1,26 +1,6 @@
-
-box = []
-
-while True:
-    inp = input("Enter number for the sequence (enter * to stop):\n")
-    if inp == '*':
-        break
-    if inp.isdigit():  
-        num = int(inp)
-        box.append(num)
-    else:
-        print("Please enter a valid non-negative integer or '*' to stop.")
-
-if len(box) >= 3:
-    additive = True
-    for i in range(len(box) - 2):
-        if box[i] + box[i + 1] != box[i + 2]:
-            additive = False
-            break
-
-    if additive:
-        print("It is an additive sequence.")
-    else:
-        print("It is not an additive sequence.")
-else:
-    print("Please enter at least three numbers.")
+def additive_sequence(n):
+    seq = [0, 1]
+    for _ in range(2, n):
+        seq.append(seq[-1] + seq[-2])
+    return seq
+print(additive_sequence(10))
