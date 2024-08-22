@@ -1,4 +1,4 @@
-n=3
+n=2
 n1=5
 a=[]
 for i in range(1,500):
