@@ -1,4 +1,4 @@
-ss=0
+ss =0
 ssq=0
 for i in range(1,201):
     ss+=(i**2)
