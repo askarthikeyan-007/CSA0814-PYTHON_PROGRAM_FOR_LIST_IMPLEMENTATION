@@ -1,3 +1,4 @@
+#import numpy by install pip install numpy
 import numpy as np
 mat=[[0,3,0,0],
     [4,0,0,6],
