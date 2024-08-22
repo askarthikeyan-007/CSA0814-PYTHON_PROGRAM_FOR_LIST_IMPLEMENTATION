@@ -1,5 +1,4 @@
 from collections import Counter
-
 s = input()
 count = Counter(s)
 first_index = min(i for i in range(len(s)) if count[s[i]] > 1)
